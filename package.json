@@ -1,0 +1,15 @@
+{
+	"name": "portfolioc2020",
+	"version": "1.0.0",
+	"description": "",
+	"main": "javascript.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"compile:sass": "node-sass sass/main.scss style.css -w"
+	},
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"sass": "^1.24.1"
+	}
+}
