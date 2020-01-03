@@ -1,0 +1,72 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+main {
+  position: relative; }
+
+@font-face {
+  font-family: "BebasNeue";
+  src: url("assets/fonts/BebasNeue-Regular.otf"); }
+
+@font-face {
+  font-family: "TSBlock";
+  src: url("assets/fonts/TSBlock-Bold.otf"); }
+
+.information-ticket_page-number {
+  font-size: 3.2rem;
+  font-family: 'Segoe UI';
+  font-weight: 700; }
+
+.information-ticket_page-name {
+  font-size: 1.9rem;
+  font-family: 'BebasNeue'; }
+
+.information-ticket_chinese-text {
+  font-size: 2.5rem;
+  font-family: 'Segoe UI';
+  font-weight: 500; }
+
+.information-ticket_developer-name {
+  font-size: 2.5rem;
+  font-family: 'BebasNeue'; }
+
+.information-ticket_ocuppation {
+  font-size: 1.6rem;
+  font-family: 'Adobe Garamond Pro'; }
+
+.information-ticket {
+  text-align: center;
+  width: 18rem;
+  padding: 0.3rem;
+  box-shadow: 0.5px 0.5px 10px rgba(9, 8, 8, 0.4);
+  position: absolute;
+  background-color: #FFFFFF; }
+  .information-ticket * {
+    padding: 0.7rem; }
+  .information-ticket span {
+    display: inline-block; }
+    .information-ticket span:before {
+      border-top: 4px solid black;
+      display: block;
+      height: 1px;
+      content: " ";
+      width: 55%; }
+
+header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  grid-template-rows: 3fr 1.5fr; }
+  header .header_image-header {
+    grid-row: 1/span 1;
+    height: 100%;
+    width: 100%; }
+  header .header_see-more {
+    grid-row: 2/span 1; }

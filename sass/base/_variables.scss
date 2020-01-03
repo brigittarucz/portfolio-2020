@@ -1,0 +1,36 @@
+// COLORS
+
+$color-black: #08090A;
+$color-green: #BCF659;
+$color-violet: #AD8AFD;
+$color-white: #FFFFFF;  
+$color-shadow: rgb(9,8,8);  
+ 
+// IMPORT FONTS  
+ 
+@font-face { 
+  font-family: "BebasNeue";
+  src: url("assets/fonts/BebasNeue-Regular.otf");
+}
+
+@font-face {
+  font-family: "TSBlock";
+  src: url("assets/fonts/TSBlock-Bold.otf");
+}
+
+// FONT SIZES
+
+$text-l: 3.2rem;
+$text-m: 2.5rem;
+$text-s: 1.9rem;
+$text-xs: 1.6rem;
+
+// GENERAL MARGINS
+
+$margin-l: 1.5rem;
+$margin-m: 0.7rem;
+$margin-s: 0.3rem;
+
+$padding-l: 1.5rem;
+$padding-m: 0.7rem;
+$padding-s: 0.3rem;

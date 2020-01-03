@@ -1,0 +1,35 @@
+// TSBlock
+// BebasNeue
+// Sitka Small
+// Segoe UI Regular
+// Adobe Garamond Pro
+
+.information-ticket {
+
+  &_page-number {
+  font-size: $text-l;
+  font-family: 'Segoe UI';
+  font-weight: 700;
+}
+
+  &_page-name {
+  font-size: $text-s;
+  font-family: 'BebasNeue';
+}
+
+  &_chinese-text {
+    font-size: $text-m;
+    font-family: 'Segoe UI';
+    font-weight: 500;
+  }
+
+  &_developer-name {
+    font-size: $text-m;
+    font-family: 'BebasNeue';
+  }
+
+  &_ocuppation {
+    font-size: $text-xs;
+    font-family: 'Adobe Garamond Pro';
+  }
+}
