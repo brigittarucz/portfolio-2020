@@ -1,0 +1,98 @@
+.header_home {
+	width: 100%;
+	display: grid;
+	position: relative;
+	grid-template-columns: 16rem 2fr;
+	grid-template-rows: 35rem minmax(5rem, 18rem);
+
+	@include tablet {
+		grid-template-columns: 2fr 2fr;
+		grid-template-rows: 45rem minmax(5rem, 25rem);
+	}
+
+	@include small-desktop {
+		grid-template-rows: 1fr 1fr;
+	}
+
+	.header_information-ticket {
+		grid-column: 1/span 1;
+		grid-row: 1/span 2;
+	}
+
+	.header_image-header {
+		grid-column: 2/span 1;
+		grid-row: 1/span 1;
+		max-height: 100vh;
+		width: 100%;
+		background-image: url('assets/backgroundHome.jpg');
+		background-position: bottom;
+		background-size: cover;
+
+		@include small-desktop {
+			grid-column: 1/span 2;
+			grid-row: 1/span 2;
+		}
+	}
+
+	.header_see-more {
+		grid-column: 2/span 1;
+		grid-row: 2/span 1;
+		height: 100%;
+
+		img {
+			max-width: 15rem;
+			padding: $padding-s;
+			margin-left: calc(50% - 7.5rem);
+		}
+
+		@include small-desktop {
+			position: absolute;
+
+			img {
+				padding: 0;
+				margin-left: 245%;
+				width: 15rem;
+			}
+		}
+	}
+}
+
+.header_projects {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 16rem 2fr;
+	grid-template-rows: 35rem minmax(5rem, 1rem);
+
+	@include tablet {
+		display: block;
+	}
+
+	&-navigation {
+		margin: auto;
+		grid-column: 2/span 1;
+		grid-template-rows: 1/span 2;
+
+		@include tablet {
+			position: absolute;
+			right: 0;
+		}
+
+		.active {
+			&:after {
+				border-bottom: 3px solid $color-violet;
+				display: block;
+				content: " ";
+				width: 100%;
+			}
+		}
+
+		.navigation-item {
+			padding-right: $padding-sl;
+			color: $color-black;
+
+			@include tablet {
+				display: inline-block;
+			}
+		}
+	}
+}

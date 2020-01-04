@@ -1,26 +1,29 @@
 .information-ticket {
-  text-align: center;
-  width: 18rem;
-  padding: $padding-s;
-  box-shadow: 0.5px 0.5px 10px rgba($color-shadow, 0.4);
-  position: absolute;
-  background-color: $color-white;
-  
-  * {
-    padding: $padding-m;
-  }
+	text-align: center;
+	width: 16rem;
+	padding: $padding-s;
+	box-shadow: 0.5px 0.5px 10px rgba($color-shadow, 0.4);
+	position: absolute;
+	background-color: $color-white;
+	z-index: 2;
+	* {
+		padding: $padding-m;
+	}
 
-  span {
-    display: inline-block;   
+	span {
+		display: inline-block;
 
-    &:before {
-      border-top: 4px solid black;
-      display: block;
-      height: 1px;
-      content: " ";
-      width: 55%;
-  }
+		&:before {
+			border-top: 4px solid $color-black;
+			display: block;
+			height: 1px;
+			content: " ";
+			width: 55%;
+		}
+	}
 
-  }
-
-} 
+	@include tablet {
+		top: 10%;
+		left: 0;
+	}
+}

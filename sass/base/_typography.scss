@@ -5,31 +5,100 @@
 // Adobe Garamond Pro
 
 .information-ticket {
+	&_page-number {
+		font-size: $text-l;
+		font-family: 'Segoe UI';
+		font-weight: 700;
+	}
 
-  &_page-number {
-  font-size: $text-l;
-  font-family: 'Segoe UI';
-  font-weight: 700;
+	&_page-name {
+		font-size: $text-s;
+		font-family: 'BebasNeue';
+	}
+
+	&_chinese-text {
+		font-size: $text-s;
+		font-family: 'Segoe UI';
+		font-weight: 500;
+	}
+
+	&_developer-name {
+		font-size: $text-m;
+		font-family: 'BebasNeue';
+	}
+
+	&_ocuppation {
+		font-size: $text-xs;
+		font-family: 'Adobe Garamond Pro';
+	}
 }
 
-  &_page-name {
-  font-size: $text-s;
-  font-family: 'BebasNeue';
+.header_primary {
+	font-family: 'TSBlock';
+	font-size: $text-xl;
+
+	@include tablet {
+		font-size: $text-xxl;
+	}
+
+	@include tablet {
+		font-size: $text-xxxl;
+	}
 }
 
-  &_chinese-text {
-    font-size: $text-m;
-    font-family: 'Segoe UI';
-    font-weight: 500;
-  }
+.block_paragraph {
+	font-family: 'Sitka Small';
+	font-weight: 900;
+	font-size: $text-xs;
+}
 
-  &_developer-name {
-    font-size: $text-m;
-    font-family: 'BebasNeue';
-  }
+.navigation-item {
+	display: block;
+	letter-spacing: 2px;
+	text-align: center;
+	font-size: $text-m;
+	padding-top: $padding-xl;
+	font-weight: 900;
+	font-family: 'BebasNeue';
+	text-decoration: none;
 
-  &_ocuppation {
-    font-size: $text-xs;
-    font-family: 'Adobe Garamond Pro';
-  }
+	@include tablet {
+		font-size: $text-l;
+	}
+}
+
+.main_project-presentation-title {
+	margin: $margin-s;
+	font-family: 'TSBlock';
+	font-size: $text-l;
+	color: $color-white;
+	-webkit-text-stroke: 2px $color-black;
+}
+
+.main_project-presentation-numbering {
+	margin: $margin-l;
+	text-align: center;
+	font-size: $text-l;
+	font-family: 'Segoe UI';
+	font-weight: 900;
+	color: $color-black;
+
+	.number_active {
+		color: $color-violet;
+	}
+
+	@include small-desktop {
+		color: $color-white;
+	}
+}
+
+.moving_text {
+	font-family: 'Vaporwave';
+	font-size: $text-m;
+	margin: $margin-xxl 0;
+	overflow-x: hidden;
+
+	@include small-desktop {
+		display: none;
+	}
 }

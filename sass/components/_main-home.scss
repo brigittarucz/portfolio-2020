@@ -1,0 +1,72 @@
+.main_home {
+	margin: $margin-m;
+
+	@include tablet {
+		margin: 0;
+		position: relative;
+		z-index: 3;
+	}
+
+	&-information {
+		img {
+			width: 55%;
+		}
+
+		@include small-desktop {
+			margin-left: -$margin-xl;
+		}
+	}
+
+	&-header_primary {
+		color: $color-white;
+		text-align: right;
+
+		@include tablet {
+			text-align: left;
+		}
+
+		.span_green {
+			color: $color-green;
+		}
+	}
+
+	&-paragraph {
+		color: $color-white;
+		padding: $padding-l;
+
+		@include tablet {
+			padding: 0;
+			right: 12rem;
+			bottom: 10rem;
+			width: 25rem;
+			position: absolute;
+		}
+	}
+
+	&-some {
+		margin-left: calc(50% - 10rem);
+		margin-top: $margin-xl;
+		margin-bottom: $margin-xl;
+
+		@include tablet {
+			background-color: $color-black;
+			border: 1.5px solid $color-green;
+			position: absolute;
+			right: 0;
+		}
+
+		* {
+			display: inline;
+		}
+
+		img {
+			border: 1px solid #bcf659;
+			width: 4.5rem;
+			padding: $padding-m;
+
+			@include tablet {
+				display: block;
+			}
+		}
+	}
+}

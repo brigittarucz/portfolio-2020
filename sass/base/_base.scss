@@ -3,12 +3,42 @@
 *::before {
 	margin: 0;
 	padding: 0;
-	box-sizing: inherit; 
+	box-sizing: inherit;
 }
 
 html {
 	font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
 }
-main {
-  position: relative;
+
+.body_home {
+	background-color: $color-black;
+}
+
+.index_wrapper {
+	background-color: $color-black;
+
+	@include tablet {
+		display: grid;
+		grid-template-columns: 2fr 2.5fr;
+	}
+
+	@include small-desktop {
+		grid-template-columns: 3fr 2.2fr;
+		height: 100%;
+	}
+}
+
+.green_border {
+	@include tablet {
+		position: absolute;
+		width: 95vw;
+		height: 92vh;
+		border: 2px solid $color-green;
+		margin: $margin-xl;
+		z-index: 1;
+	}
+}
+
+.header_home {
+	position: relative;
 }
