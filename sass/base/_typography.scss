@@ -46,6 +46,15 @@
 	}
 }
 
+.header_secondary {
+	font-size: $text-m;
+	font-family: 'BebasNeue';
+
+	@include tablet {
+		font-size: $text-l;
+	}
+}
+
 .block_paragraph {
 	font-family: 'Sitka Small';
 	font-weight: 900;
@@ -73,6 +82,27 @@
 	font-size: $text-l;
 	color: $color-white;
 	-webkit-text-stroke: 2px $color-black;
+
+	@include small-desktop {
+		display: none;
+	}
+}
+
+.main_project-presentation-title_desktop {
+	margin: $margin-s;
+	font-family: 'TSBlock';
+	font-size: $text-l;
+	color: $color-white;
+	-webkit-text-stroke: 2px $color-black;
+	display: none;
+
+	@include small-desktop {
+		display: block;
+		font-size: $text-xxxl;
+		margin-left: 25%;
+		position: absolute;
+		top: 200;
+	}
 }
 
 .main_project-presentation-numbering {
@@ -89,6 +119,10 @@
 
 	@include small-desktop {
 		color: $color-white;
+
+		.number_total {
+			-webkit-text-stroke: 2px $color-black;
+		}
 	}
 }
 
@@ -101,4 +135,48 @@
 	@include small-desktop {
 		display: none;
 	}
+}
+
+.main_details {
+	&-chinese_text {
+		font-size: $text-s;
+		font-family: 'Segoe UI';
+		font-weight: 500;
+
+		@include small-desktop {
+			font-size: $text-xxl;
+			font-weight: 900;
+		}
+	}
+
+	&-geninfo_process-paragraph {
+		font-family: 'Segoe UI';
+		font-size: $text-s;
+		font-weight: 100;
+	}
+
+	&-year {
+		@include small-desktop {
+			font-size: $text-xxxl;
+		}
+	}
+
+	&-check-1 {
+		font-family: 'TSBlock';
+		font-size: $text-l;
+		text-align: center;
+	}
+
+	.label {
+		font-family: 'Segoe UI';
+		font-size: $text-s;
+		font-weight: 100;
+	}
+
+	.generality {
+		font-family: 'Segoe UI';
+		font-size: $text-s;
+		font-weight: 100;
+	}
+
 }

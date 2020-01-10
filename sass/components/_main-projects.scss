@@ -1,4 +1,56 @@
 .main_project {
+
+  @include small-desktop {
+    position: relative;
+  }
+
+  // 14 lung pe 9 latime
+  &-generalities {
+    .main_project-arrows {
+      display: none;
+    }
+
+    @include small-desktop {
+      margin-left: 15%;
+      margin-top: -35rem;
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      grid-template-rows: repeat(5, 1fr);
+
+      .main_project-arrows {
+        display: block;
+        width: 4.5rem;
+        padding: $padding-m;
+      }
+
+      .main_project-black-rect {
+        grid-column: 2/span 5;
+        grid-row: 1/span 7;
+        object-fit: cover;
+        height: 90%;
+      }
+
+      .main_project-presentation-numbering {
+        margin-top: -2.5rem;
+        grid-column: 5/span 1;
+        grid-row: 6/span 1;
+      }
+
+      .arrows-wrapper {
+        grid-column: 1/span 5;
+        grid-row: 2/span 3;
+
+        .arrow-right {
+          position: absolute;
+        }
+
+        * {
+          display: inline;
+        }
+      }
+    }
+  }
+
   &-presentation_words {
     width: 80%;
 
@@ -14,12 +66,7 @@
   }
 
   &-black-rect {
-    width: 70%;
-    height: 90%;
-    margin-left: 25%;
-    margin-top: -25%;
-    background-color: $color-black;
-    margin-bottom: -80vh;
+    max-width: 100%;
     display: none;
 
     @include small-desktop {
@@ -34,22 +81,12 @@
     border-top: 2px solid $color-black;
     border-bottom: 2px solid $color-black;
 
+
     @include small-desktop {
-      width: 65%;
+      width: 85%;
       border: 0px;
-      margin-left: 20%;
-    }
-
-  }
-
-  &-presentation-numbering {
-    @include small-desktop {
-      margin-top: -5vh;
-      margin-left: 64vw;
-      right: 0;
     }
   }
-
 }
 
 .main_projects-show {
@@ -61,6 +98,9 @@
 
   @include small-desktop {
     width: 20rem;
+    position: absolute;
+    right: 0;
+    top: 40%;
   }
 
   article {

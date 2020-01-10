@@ -1,0 +1,291 @@
+.body_details {
+  background-color: $color-black;
+  overflow-x: hidden;
+}
+
+.main_details {
+  color: $color-white;
+
+  @include tablet {
+    position: relative;
+  }
+
+  * {
+    margin: $margin-m 0;
+  }
+
+  &-month {
+    display: inline-block;
+
+    &:before {
+      border-top: 4px solid $color-white;
+      display: block;
+      height: 1px;
+      content: " ";
+      width: 45%;
+    }
+  }
+
+  &-month {
+    padding: $padding-m;
+    padding-bottom: 0;
+    margin-left: calc(100% - 10rem);
+
+    @include tablet {
+      margin: $margin-l;
+      margin-left: calc(100% - 12rem);
+      margin-bottom: $margin-xl;
+    }
+
+    @include small-desktop {
+      margin-left: calc(100% - 40rem);
+      margin-top: -3rem;
+    }
+  }
+
+  &-year {
+    padding: $padding-m;
+    padding-top: 0;
+
+    @include tablet {
+      margin: $margin-xl $margin-m;
+    }
+
+    @include small-desktop {
+      writing-mode: vertical-lr;
+      float: right;
+      margin-top: 50rem;
+    }
+  }
+
+  &-chinese_text {
+    padding: 0 $padding-m;
+    font-size: $text-l;
+    position: absolute;
+    margin-top: -5rem;
+    right: 0;
+  }
+
+  &-image_desktop {
+    width: 100%;
+    border: 4px solid $color-white;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &-image_mobile {
+    border: 4px solid $color-white;
+    max-width: 60%;
+    z-index: 2;
+    position: relative;
+
+    @include tablet {
+      display: none;
+    }
+  }
+
+  &-details {
+    width: 110%;
+    margin-left: -5rem;
+    margin-top: -10rem;
+    z-index: 0;
+
+    @include tablet {
+      width: 45%;
+      margin: $margin-l;
+      position: absolute;
+      top: 220;
+    }
+
+    @include small-desktop {
+      width: 30%;
+      left: 0;
+      top: 320;
+    }
+  }
+
+  &-geninfo {
+    margin: $margin-xl;
+
+    &_process-header {
+      color: $color-violet;
+
+      @include tablet {
+        color: $color-white;
+      }
+
+      @include small-desktop {
+        color: $color-black;
+      }
+    }
+
+    &-image_mobile {
+      max-height: 60vh;
+    }
+
+    @include tablet {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(3, 20rem);
+      column-gap: 2rem;
+    }
+
+    @include small-desktop {
+      grid-template-columns: 0.9fr 0.9fr 1.25fr;
+      grid-template-rows: repeat(3, 18rem);
+      width: 95rem;
+      padding: $padding-l;
+      column-gap: 0.5rem;
+      background-color: $color-white;
+      color: $color-black;
+      position: absolute;
+      top: 100;
+      margin-left: calc(50% - 47.5rem);
+    }
+
+    &_visual {
+      display: none;
+
+      @include tablet {
+        display: block;
+
+        .generality-role {
+          &:before {
+            content: url(assets/multiple-users-1.png);
+          }
+        }
+
+        .generality-extras {
+          &:before {
+            content: url(assets/magic-extras-1.png);
+          }
+        }
+
+        .generality-location {
+          &:before {
+            content: url(assets/location-maps-1.png);
+          }
+        }
+
+        .main_details-geninfo-generalities {
+          display: none;
+
+          @include small-desktop {
+            display: inline-block;
+            position: absolute;
+            margin: $margin-s $margin-xl;
+
+            * {
+              padding: $padding-m 0;
+            }
+          }
+        }
+
+        .details_image {
+          border: 4px solid $color-white;
+          width: 45%;
+          z-index: 2;
+          position: relative;
+          object-fit: cover;
+
+          @include small-desktop {
+            object-fit: contain;
+          }
+        }
+
+        .main_details-geninfo-image_desktop {
+          @include small-desktop {
+            width: 95%;
+            margin: 0;
+          }
+        }
+
+        .main_details-geninfo-image_mobile {
+          @include small-desktop {
+            width: 35%;
+            object-fit: cover;
+            height: 27rem;
+            display: inline-block;
+          }
+        }
+      }
+
+      @include small-desktop {
+        grid-column: 1/span 2;
+        grid-row: 1/span 3;
+      }
+    }
+
+    &_graphs {
+      display: none;
+
+      @include tablet {
+        display: block;
+        grid-column: 2/span 1;
+        grid-row: 1/span 1;
+
+        ul {
+          max-width: 50rem;
+          list-style-type: none;
+
+          li {
+            border-top-right-radius: 0.5rem;
+            border-bottom-right-radius: 0.5rem;
+            margin: $margin-l 0;
+            height: 3rem;
+            background: linear-gradient(to left, $color-violet, $color-turq);
+          }
+
+          .label {
+            margin: $margin-m;
+          }
+        }
+
+      }
+
+      @include small-desktop {
+        grid-column: 3/span 1;
+        grid-row: 1/span 1;
+        margin: $margin-l;
+      }
+
+    }
+
+    &_process {
+      @include tablet {
+        grid-column: 2/span 1;
+        grid-row: 2/span 2;
+      }
+
+      @include small-desktop {
+        grid-column: 3/span 1;
+        grid-row: 2/span 2;
+        margin: $margin-l;
+        padding-top: 6.5rem;
+      }
+
+    }
+  }
+
+  &-check-1 {
+    margin: $margin-l;
+    -webkit-text-stroke: 1px $color-white;
+    color: $color-black;
+    text-shadow: 0.75vmin 0.75vmin 0 $color-green, -0.75vmin -0.75vmin 0 $color-violet;
+
+    @include tablet {
+      margin-bottom: $margin-xxl;
+      margin-top: -10rem;
+    }
+
+    @include small-desktop {
+      float: right;
+      margin: 0;
+      width: 5rem;
+      margin-right: 3%;
+      margin-top: 27rem;
+    }
+  }
+}

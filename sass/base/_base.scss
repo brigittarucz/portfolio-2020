@@ -42,3 +42,18 @@ html {
 .header_home {
 	position: relative;
 }
+
+.body_about {
+	background-color: $color-black;
+}
+
+.violet_border {
+	@include tablet {
+		position: absolute;
+		width: 95vw;
+		height: 92vh;
+		border: 2px solid $color-violet;
+		margin: $margin-xl;
+		z-index: 1;
+	}
+}

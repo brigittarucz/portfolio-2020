@@ -1,0 +1,164 @@
+.about_wrapper {
+  @include tablet {
+    display: grid;
+    grid-template-columns: 3fr 2.2fr;
+    grid-template-rows: 99vh;
+    overflow-y: hidden;
+  }
+
+  &-header {
+    color: $color-white;
+    width: 25rem;
+    margin-left: calc(100% - 26rem);
+    text-align: right;
+
+    .span-violet {
+      color: $color-violet;
+    }
+
+    @include tablet {
+      margin: 0;
+      margin-top: 18rem;
+      margin-left: calc(10% - 5rem);
+      text-align: left;
+      width: 40rem;
+    }
+  }
+
+  &-information_seeMore {
+    max-width: 15rem;
+    padding: $padding-s;
+    margin-left: -5rem;
+    margin-top: -3rem;
+
+    @include tablet {
+      display: none;
+    }
+
+  }
+
+  &-seeMore {
+    display: none;
+
+    @include tablet {
+      display: block;
+      position: absolute;
+      padding: 0;
+      width: 15rem;
+      margin-top: 35rem;
+      margin-left: -10vw;
+    }
+
+    @include small-desktop {
+      margin-left: -4.5vw;
+    }
+  }
+
+  .header_about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 18rem 2fr;
+    grid-template-rows: 35rem minmax(5rem, 1rem);
+    margin-bottom: 10rem;
+
+    @include tablet {
+      display: block;
+      margin-bottom: 0;
+      background-image: url(assets/profile-picture.jpg);
+      background-size: cover;
+      background-position: left;
+    }
+
+    &-navigation {
+      margin: auto;
+      grid-column: 2/span 1;
+      grid-template-rows: 1/span 2;
+
+      @include tablet {
+        display: none;
+        position: absolute;
+        right: 0;
+      }
+
+      .active {
+        &:after {
+          border-bottom: 3px solid $color-violet;
+          display: block;
+          content: " ";
+          width: 100%;
+        }
+      }
+
+      .navigation-item {
+        padding-right: $padding-sl;
+        color: $color-white;
+
+        @include tablet {
+          display: inline-block;
+        }
+      }
+    }
+
+    &-navigation-desktop {
+      margin: auto;
+      grid-column: 2/span 1;
+      grid-template-rows: 1/span 2;
+      display: none;
+
+      @include tablet {
+        display: block;
+        position: absolute;
+        right: $margin-xxl;
+      }
+
+      .active {
+        &:after {
+          border-bottom: 3px solid $color-violet;
+          display: block;
+          content: " ";
+          width: 100%;
+        }
+      }
+
+      .navigation-item {
+        padding-right: $padding-sl;
+        color: $color-white;
+
+        @include tablet {
+          display: inline-block;
+        }
+      }
+    }
+
+  }
+
+  &-some {
+    margin-left: calc(50% - 10rem);
+    margin-top: $margin-xl;
+    margin-bottom: $margin-xl;
+
+    @include tablet {
+      background-color: $color-black;
+      border: 1.5px solid $color-violet;
+      position: absolute;
+      right: 0;
+      z-index: 2;
+    }
+
+    * {
+      display: inline;
+    }
+
+    img {
+      border: 1px solid $color-violet;
+      width: 4.5rem;
+      padding: $padding-m;
+
+      @include tablet {
+        display: block;
+      }
+    }
+  }
+
+
+}
