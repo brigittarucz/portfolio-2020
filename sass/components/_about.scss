@@ -1,4 +1,9 @@
 .about_wrapper {
+
+  .grid_system {
+    z-index: 2;
+  }
+
   @include tablet {
     display: grid;
     grid-template-columns: 3fr 2.2fr;
@@ -6,9 +11,26 @@
     overflow-y: hidden;
   }
 
+  .glitch-text {
+    h1:nth-child(1) {
+      animation: glitch1 2.5s infinite;
+    }
+
+    h1:nth-child(2) {
+      color: #67f3da;
+      animation: glitch2 2.5s infinite;
+    }
+
+    h1:nth-child(3) {
+      color: #f16f6f;
+      animation: glitch3 2.5s infinite;
+    }
+  }
+
   &-header {
     color: $color-white;
     width: 25rem;
+    position: absolute;
     margin-left: calc(100% - 26rem);
     text-align: right;
 
@@ -67,6 +89,8 @@
       background-image: url(assets/profile-picture.jpg);
       background-size: cover;
       background-position: left;
+      animation: glitch 6s infinite;
+      mix-blend-mode: hard-light;
     }
 
     &-navigation {
@@ -80,15 +104,6 @@
         right: 0;
       }
 
-      .active {
-        &:after {
-          border-bottom: 3px solid $color-violet;
-          display: block;
-          content: " ";
-          width: 100%;
-        }
-      }
-
       .navigation-item {
         padding-right: $padding-sl;
         color: $color-white;
@@ -97,6 +112,7 @@
           display: inline-block;
         }
       }
+
     }
 
     &-navigation-desktop {
@@ -111,15 +127,6 @@
         right: $margin-xxl;
       }
 
-      .active {
-        &:after {
-          border-bottom: 3px solid $color-violet;
-          display: block;
-          content: " ";
-          width: 100%;
-        }
-      }
-
       .navigation-item {
         padding-right: $padding-sl;
         color: $color-white;
@@ -128,13 +135,14 @@
           display: inline-block;
         }
       }
+
     }
 
   }
 
   &-some {
     margin-left: calc(50% - 10rem);
-    margin-top: $margin-xl;
+    margin-top: 34rem;
     margin-bottom: $margin-xl;
 
     @include tablet {
@@ -159,6 +167,24 @@
       }
     }
   }
+}
 
+.active {
+  &:after {
+    display: block;
+    content: " ";
+    background-color: #ad8afd;
+    width: 0%;
+    height: 3px;
+    transition: all 0.2s ease-in-out;
+    transition-duration: 0.4s;
+    opacity: 0;
+  }
 
+  &:hover {
+    &:after {
+      width: 100%;
+      opacity: 1;
+    }
+  }
 }

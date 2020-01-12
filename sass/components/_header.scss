@@ -70,20 +70,11 @@
 	&-navigation {
 		margin: auto;
 		grid-column: 2/span 1;
-		grid-template-rows: 1/span 2;
+		grid-row: 1/span 2;
 
 		@include tablet {
 			position: absolute;
 			right: 0;
-		}
-
-		.active {
-			&:after {
-				border-bottom: 3px solid $color-violet;
-				display: block;
-				content: " ";
-				width: 100%;
-			}
 		}
 
 		.navigation-item {

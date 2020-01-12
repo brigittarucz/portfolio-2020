@@ -30,6 +30,11 @@
 	&_ocuppation {
 		font-size: $text-xs;
 		font-family: 'Adobe Garamond Pro';
+
+		a {
+			text-decoration: none;
+			color: $color-black;
+		}
 	}
 }
 

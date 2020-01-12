@@ -50,7 +50,7 @@ html {
 .violet_border {
 	@include tablet {
 		position: absolute;
-		width: 95vw;
+		width: 93vw;
 		height: 92vh;
 		border: 2px solid $color-violet;
 		margin: $margin-xl;
