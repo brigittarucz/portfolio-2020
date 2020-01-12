@@ -269,11 +269,19 @@
     }
   }
 
+  &-check {
+    a {
+      text-decoration: none;
+    }
+  }
+
   &-check-1 {
+
     margin: $margin-l;
     -webkit-text-stroke: 1px $color-white;
     color: $color-black;
-    text-shadow: 0.75vmin 0.75vmin 0 $color-green, -0.75vmin -0.75vmin 0 $color-violet;
+    text-shadow: 0.75vmin 0.75vmin 0 $color-green,
+      -0.75vmin -0.75vmin 0 $color-violet;
 
     @include tablet {
       margin-bottom: $margin-xxl;

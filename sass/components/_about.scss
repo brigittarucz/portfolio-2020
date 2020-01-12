@@ -142,10 +142,10 @@
 
   &-some {
     margin-left: calc(50% - 10rem);
-    margin-top: 34rem;
     margin-bottom: $margin-xl;
 
     @include tablet {
+      margin-top: 34rem;
       background-color: $color-black;
       border: 1.5px solid $color-violet;
       position: absolute;

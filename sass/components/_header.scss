@@ -38,6 +38,7 @@
 		grid-column: 2/span 1;
 		grid-row: 2/span 1;
 		height: 100%;
+		z-index: 5;
 
 		img {
 			max-width: 15rem;
@@ -50,8 +51,11 @@
 
 			img {
 				padding: 0;
-				margin-left: 245%;
+				position: absolute;
+				margin-left: 23vw;
 				width: 15rem;
+				z-index: 2;
+
 			}
 		}
 	}

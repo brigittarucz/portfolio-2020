@@ -106,7 +106,11 @@
 		font-size: $text-xxxl;
 		margin-left: 25%;
 		position: absolute;
-		top: 200;
+		top: 180;
+	}
+
+	@include big-desktop {
+		top: 230;
 	}
 }
 

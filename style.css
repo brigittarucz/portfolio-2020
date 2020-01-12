@@ -52,11 +52,22 @@ html {
 @media (min-width: 800px) {
   .violet_border {
     position: absolute;
-    width: 93vw;
+    width: 95vw;
     height: 92vh;
     border: 2px solid #ad8afd;
     margin: 2rem;
     z-index: 1; } }
+
+html::-webkit-scrollbar-track {
+  border: 1px solid black;
+  background-color: #F5F5F5; }
+
+html::-webkit-scrollbar {
+  width: 10px;
+  background-color: #F5F5F5; }
+
+html::-webkit-scrollbar-thumb {
+  background-color: #000000; }
 
 .information-ticket_page-number {
   font-size: 3.2rem;
@@ -141,7 +152,10 @@ html {
       font-size: 6.5rem;
       margin-left: 25%;
       position: absolute;
-      top: 200; } }
+      top: 180; } }
+  @media (min-width: 1400px) {
+    .main_project-presentation-title_desktop {
+      top: 230; } }
 
 .main_project-presentation-numbering {
   margin: 1.5rem;
@@ -425,7 +439,8 @@ html {
   .header_home .header_see-more {
     grid-column: 2/span 1;
     grid-row: 2/span 1;
-    height: 100%; }
+    height: 100%;
+    z-index: 5; }
     .header_home .header_see-more img {
       max-width: 15rem;
       padding: 0.3rem;
@@ -435,8 +450,10 @@ html {
         position: absolute; }
         .header_home .header_see-more img {
           padding: 0;
-          margin-left: 245%;
-          width: 15rem; } }
+          position: absolute;
+          margin-left: 23vw;
+          width: 15rem;
+          z-index: 2; } }
 
 .header_projects {
   width: 100%;
@@ -461,6 +478,9 @@ html {
         .header_projects-navigation .navigation-item {
           display: inline-block; } }
 
+.body_home {
+  overflow-x: hidden; }
+
 .main_home {
   margin: 0.7rem; }
   @media (min-width: 800px) {
@@ -473,9 +493,21 @@ html {
   @media (min-width: 1100px) {
     .main_home-information {
       margin-left: -2rem; } }
+  .main_home .glitch-text-home {
+    padding-bottom: 10rem;
+    position: relative; }
+    .main_home .glitch-text-home h1:nth-child(1) {
+      animation: glitch1 2.5s infinite; }
+    .main_home .glitch-text-home h1:nth-child(2) {
+      color: #67f3da;
+      animation: glitch2 2.5s infinite; }
+    .main_home .glitch-text-home h1:nth-child(3) {
+      color: #f16f6f;
+      animation: glitch3 2.5s infinite; }
   .main_home-header_primary {
     color: #ffffff;
-    text-align: right; }
+    text-align: right;
+    position: absolute; }
     @media (min-width: 800px) {
       .main_home-header_primary {
         text-align: left; } }
@@ -500,10 +532,12 @@ html {
         background-color: #08090a;
         border: 1.5px solid #bcf659;
         position: absolute;
-        right: 0; } }
+        right: 0;
+        top: 300; } }
     .main_home-some * {
       display: inline; }
     .main_home-some img {
+      z-index: 2;
       border: 1px solid #bcf659;
       width: 4.5rem;
       padding: 0.7rem; }
@@ -521,7 +555,7 @@ html {
 @media (min-width: 1100px) {
   .main_project-generalities {
     margin-left: 15%;
-    margin-top: -35rem;
+    margin-top: -20vw;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     grid-template-rows: repeat(5, 1fr); }
@@ -555,7 +589,11 @@ html {
     .main_project-presentation_words {
       margin: 0;
       width: 30%;
-      margin-left: 15%; } }
+      margin-left: 15%;
+      height: 40vw; } }
+  @media (min-width: 1400px) {
+    .main_project-presentation_words {
+      height: 35vw; } }
 
 .main_project-black-rect {
   max-width: 100%;
@@ -569,6 +607,8 @@ html {
   width: 100%;
   border-top: 2px solid #08090a;
   border-bottom: 2px solid #08090a; }
+  .main_project-presentation_image:hover {
+    cursor: pointer; }
   @media (min-width: 1100px) {
     .main_project-presentation_image {
       width: 85%;
@@ -594,6 +634,7 @@ html {
     border: 2px solid #08090a;
     width: 100%;
     height: 100%;
+    filter: contrast(130%);
     object-fit: cover; }
 
 .body_details {
@@ -782,6 +823,8 @@ html {
         grid-row: 2/span 2;
         margin: 1.5rem;
         padding-top: 6.5rem; } }
+  .main_details-check a {
+    text-decoration: none; }
   .main_details-check-1 {
     margin: 1.5rem;
     -webkit-text-stroke: 1px #ffffff;
@@ -908,10 +951,10 @@ html {
 
 .about_wrapper-some {
   margin-left: calc(50% - 10rem);
-  margin-top: 34rem;
   margin-bottom: 2rem; }
   @media (min-width: 800px) {
     .about_wrapper-some {
+      margin-top: 34rem;
       background-color: #08090a;
       border: 1.5px solid #ad8afd;
       position: absolute;

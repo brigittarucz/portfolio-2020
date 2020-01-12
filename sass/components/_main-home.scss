@@ -1,3 +1,7 @@
+.body_home {
+	overflow-x: hidden;
+}
+
 .main_home {
 	margin: $margin-m;
 
@@ -17,9 +21,29 @@
 		}
 	}
 
+	.glitch-text-home {
+		padding-bottom: 10rem;
+		position: relative;
+
+		h1:nth-child(1) {
+			animation: glitch1 2.5s infinite;
+		}
+
+		h1:nth-child(2) {
+			color: #67f3da;
+			animation: glitch2 2.5s infinite;
+		}
+
+		h1:nth-child(3) {
+			color: #f16f6f;
+			animation: glitch3 2.5s infinite;
+		}
+	}
+
 	&-header_primary {
 		color: $color-white;
 		text-align: right;
+		position: absolute;
 
 		@include tablet {
 			text-align: left;
@@ -53,6 +77,7 @@
 			border: 1.5px solid $color-green;
 			position: absolute;
 			right: 0;
+			top: 300;
 		}
 
 		* {
@@ -60,6 +85,7 @@
 		}
 
 		img {
+			z-index: 2;
 			border: 1px solid $color-green;
 			width: 4.5rem;
 			padding: $padding-m;
