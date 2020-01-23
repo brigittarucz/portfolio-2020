@@ -61,9 +61,13 @@
 		@include tablet {
 			padding: 0;
 			right: 12rem;
-			bottom: 10rem;
+			bottom: 7rem;
 			width: 25rem;
 			position: absolute;
+		}
+
+		@include small-desktop {
+			width: 35rem;
 		}
 	}
 

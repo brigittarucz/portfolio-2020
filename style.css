@@ -520,9 +520,12 @@ html::-webkit-scrollbar-thumb {
       .main_home-paragraph {
         padding: 0;
         right: 12rem;
-        bottom: 10rem;
+        bottom: 7rem;
         width: 25rem;
         position: absolute; } }
+    @media (min-width: 1100px) {
+      .main_home-paragraph {
+        width: 35rem; } }
   .main_home-some {
     margin-left: calc(50% - 10rem);
     margin-top: 2rem;
