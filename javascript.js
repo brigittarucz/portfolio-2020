@@ -37,8 +37,8 @@ function updateProjectView(numClass, arrow) {
     document.querySelector(".text-desktop-srcset").srcset = "assets/DescriptiveWords/" + currentPick.words_img + "-desktop.png";
     document.querySelector(".text-mobile-src").src = "assets/DescriptiveWords/" + currentPick.words_img + "-mobile.png";
     document.querySelector(".main_project-presentation_image").src = "assets/PSxRainbow/" + currentPick.desktop_img + ".png";
-    document.querySelector(".main_project-presentation-title_desktop").textContent = currentPick.title;
-    document.querySelector(".main_project-presentation-title").textContent = currentPick.title;
+    document.querySelector(".main_project-presentation-title_desktop").textContent = currentPick.proj_title;
+    document.querySelector(".main_project-presentation-title").textContent = currentPick.proj_title;
     document.querySelector(".number_active").textContent = "0" + currentPick.number;
   })
 }

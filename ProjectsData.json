@@ -12,7 +12,8 @@
     "year": 2018,
     "website_link": "http://ingeniousneuron.com/portf2018des/",
     "process": "An interesting challenge with a focus on design, Geometric Dave is a standalone product that can be used as a portfolio. Its execution is simple, yet modern including elements from the late 2018 trends. Information can be divided throughout the different pages the website includes and projects can be displayed in a grid system.",
-    "dataset_val": "geometric-dave"
+    "dataset_val": "geometric-dave",
+    "proj_title": "Geometric Dave"
   },
   "Greenlandic Twist": {
     "desktop_img": "greenlandic_twist_desktop",
@@ -27,7 +28,8 @@
     "year": 2019,
     "website_link": "http://ingeniousneuron.com/greenlandDes/",
     "process": "I had the pleasure to contribute in developing a visual identity for creative artist and designer, Lis Stender. Challenges along the way included gathering, customizing and maintaining consistency in what the client opted to display in their online presence.",
-    "dataset_val": "greenlandic-twist"
+    "dataset_val": "greenlandic-twist",
+    "proj_title": "Greenlandic Twist"
   },
   "Memory Lane": {
     "desktop_img": "memory_lane_desktop",
@@ -42,7 +44,8 @@
     "year": 2019,
     "website_link": "http://ingeniousneuron.com/theThemePicker/",
     "process": "A wonderful journey through the 90's nostalgia, Memory Lane stands as a design experiment that tries to achieve the good ol' Windows 98 look. This is demonstrated through combining several elements from that specific era with various modern themes in order to accomplish an unusual artistic rush.",
-    "dataset_val": "memory-lane"
+    "dataset_val": "memory-lane",
+    "proj_title": "Memory Lane"
   },
   "Serotonin Refill": {
     "desktop_img": "serotonin_refill_desktop",
@@ -57,7 +60,8 @@
     "year": 2019,
     "website_link": "http://ingeniousneuron.com/gamblingGame/",
     "process": "A complex signup system invites you to create an account in order to play for free and limitless an advanced version of Rock Paper Scissors. Serotonin refill tests the possibility of reviving one of the most played childhood games through an advanced code and a stylish design, alongside with including several elements to keep the player hooked up on the game.",
-    "dataset_val": "serotonin-refill"
+    "dataset_val": "serotonin-refill",
+    "proj_title": "Serotonin Refill"
   },
   "Cosmos Trip": {
     "desktop_img": "cosmos_trip_desktop",
@@ -72,7 +76,8 @@
     "year": 2019,
     "website_link": "https://brigittarucz.github.io/space-colonization-timeline/",
     "process": "A wonderful history lesson, Cosmos Trip invites you to discover the journey mankind has experienced regarding space exploration. A selection was made for presenting a few ground breaking events that bring us closer and closer to colonizing space and that have changed everything about the sky we look at everyday.",
-    "dataset_val": "cosmos-trip"
+    "dataset_val": "cosmos-trip",
+    "proj_title": "Cosmos Trip"
   },
   "Daily Memento": {
     "desktop_img": "daily_memento_desktop",
@@ -87,6 +92,7 @@
     "year": 2019,
     "website_link": "https://brigittarucz.github.io/my-day/",
     "process": "A little web-app with a few functionalities that can be further developed on demand, Daily Memento will present a rough idea about how to display in your virtual agenda your own daily activites.",
-    "dataset_val": "daily-memento"
+    "dataset_val": "daily-memento",
+    "proj_title": "Daily Memento"
   }
 }

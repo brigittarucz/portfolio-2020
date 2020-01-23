@@ -16,7 +16,17 @@ fetchProjectDetails();
 
 function populatePage(projectData) {
   // Mobile
-  document.querySelector(".main_details-title").textContent = projectData.title;
+  let title = projectData.proj_title;
+  let spanTitle, finalTitle = "";
+  for (let i = 0; i < title.length; i++) {
+    if (title.charAt(i) != " ") {
+      spanTitle = "<span>" + title.charAt(i) + "</span>";
+      finalTitle += spanTitle;
+    } else {
+      finalTitle += " ";
+    }
+  }
+  document.querySelector(".main_details-title").innerHTML = finalTitle;
   document.querySelector(".main_details-month").textContent = projectData.month;
   document.querySelector(".main_details-image_desktop").src = "assets/PSxRainbow/" + projectData.desktop_img + ".png";
   document.querySelector(".main_details-year").textContent = projectData.year;
